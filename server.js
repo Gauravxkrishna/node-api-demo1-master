@@ -21,8 +21,8 @@ dotenv.config(); // load .env if available
 
 (async () => {  
   try {
-    const mongoUri = await getDbUri();
-    await mongoose.connect(mongoUri);
+    // const mongoUri = await getDbUri();
+    // await mongoose.connect(mongoUri);
     console.log("✅ MongoDB connected");
 
     const PORT = process.env.PORT || 3000;
